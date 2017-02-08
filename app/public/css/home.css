@@ -1,0 +1,39 @@
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 40%;
+  
+  right: 50%;
+  
+}
+
+body {
+	background: url(../images/friends.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+h1 {
+	font-weight: 1000px;
+  color: antiquewhite;
+  font-family: Arnoldboecklin, fantasy;
+
+}
+
+.card-action{
+
+  font-family: Arnoldboecklin, fantasy;
+  font-weight: 700px;
+}
+
+.card-content{
+
+  font-family: Arnoldboecklin, fantasy;
+  color: antiquewhite;
+}

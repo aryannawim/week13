@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Survey</title>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+
+	<!-- Compiled and minified CSS for Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	
+	<!-- Compiled and minified JavaScript for Materialize-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+	<!-- Materialize Icons CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+
+	<!-- My JavaScript -->
+	<script type="text/javascript" src="js/logic.js"></script>
+
+</head>
+<body>
+
+<!-- Container for the Materialize framework. -->
+<div class='container'>
+
+	<div class='row'>
+		<div class='col s12 m12 center-align'>
+			<h1>Survey</h1>
+		</div>
+	</div>
+
+	<!-- The Survey Form -->
+	<div class='row'>
+		<div class='s6 offset-s6'>
+			<form>
+
+				<!-- About You Header -->
+				<div class="section">
+					<h4>About You</h4>
+					<div class="divider"></div>
+				</div>
+
+
+				<!-- Name Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="nameInput" type="text" class="validate">
+						<label class="active" for="nameInput">Name</label>
+					</div>
+				</div>
+
+				<!-- Image Link Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">perm_media</i>
+						<input id="imageInput" type="text" class="validate">
+						<label class="active" for="imageInput">Image Link</label>
+					</div>
+				</div>
+
+				<!-- Questions Header -->
+				<div class="section">
+					<h4>Survey Questions</h4>
+					<div class="divider"></div>
+				</div>
+				
+				
+				<!-- Questions -->
+				<div class='section'>
+					<p>1) Star Wars is better than Star Trek...</p>
+					<input name="question1" type="radio" id="star1" value="1"/>
+					<label for="star1">Strongly Disagree</label>
+					<input name="question1" type="radio" id="star2" value="2"/>
+					<label for="star2">Disagree</label>
+					<input name="question1" type="radio" id="star3"  value="3"/>
+					<label for="star3">Neutral</label>
+					<input name="question1" type="radio" id="star4" value="4" />
+					<label for="star4">Agree</label>
+					<input name="question1" type="radio" id="star5" value="5" />
+					<label for="star5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>2) Schwarzenegger would dominate Stallone in a celebrity boxing match... </p>
+					<input name="question2" type="radio" id="arnold1" value="1"/>
+					<label for="arnold1">Strongly Disagree</label>
+					<input name="question2" type="radio" id="arnold2" value="2"/>
+					<label for="arnold2">Disagree</label>
+					<input name="question2" type="radio" id="arnnold3"  value="3"/>
+					<label for="arnold3">Neutral</label>
+					<input name="question2" type="radio" id="arnold4" value="4" />
+					<label for="arnold4">Agree</label>
+					<input name="question2" type="radio" id="arnold5" value="5" />
+					<label for="arnold5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>3) Religion is important to me...</p>
+					<input name="question3" type="radio" id="religion1" value="1"/>
+					<label for="religion1">Strongly Disagree</label>
+					<input name="question3" type="radio" id="religion2" value="2"/>
+					<label for="religion2">Disagree</label>
+					<input name="question3" type="radio" id="religion3"  value="3"/>
+					<label for="religion3">Neutral</label>
+					<input name="question3" type="radio" id="religion4" value="4" />
+					<label for="religion4">Agree</label>
+					<input name="question3" type="radio" id="religion5" value="5" />
+					<label for="religion5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>4) Michael Jackson's Thriller is one of the best albums ever...</p>
+					<input name="question4" type="radio" id="mj1" value="1"/>
+					<label for="mj1">Strongly Disagree</label>
+					<input name="question4" type="radio" id="mj2" value="2"/>
+					<label for="mj2">Disagree</label>
+					<input name="question4" type="radio" id="mj3"  value="3"/>
+					<label for="mj3">Neutral</label>
+					<input name="question4" type="radio" id="mj4" value="4" />
+					<label for="mj4">Agree</label>
+					<input name="question4" type="radio" id="mj5" value="5" />
+					<label for="mj5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>5) Beer is better than wine...</p>
+					<input name="question5" type="radio" id="beer1" value="1"/>
+					<label for="beer1">Strongly Disagree</label>
+					<input name="question5" type="radio" id="beer2" value="2"/>
+					<label for="beer2">Disagree</label>
+					<input name="question5" type="radio" id="beer3"  value="3"/>
+					<label for="beer3">Neutral</label>
+					<input name="question5" type="radio" id="beer4" value="4" />
+					<label for="beer4">Agree</label>
+					<input name="question5" type="radio" id="beer5" value="5" />
+					<label for="beer5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>6) Trump is destroying the USA...</p>
+					<input name="question6" type="radio" id="trump1" value="1"/>
+					<label for="trump1">Strongly Disagree</label>
+					<input name="question6" type="radio" id="trump2" value="2"/>
+					<label for="trump2">Disagree</label>
+					<input name="question6" type="radio" id="trump3"  value="3"/>
+					<label for="trump3">Neutral</label>
+					<input name="question6" type="radio" id="trump4" value="4" />
+					<label for="trump4">Agree</label>
+					<input name="question6" type="radio" id="trump5" value="5" />
+					<label for="trump5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>7) Cats are better than dogs...</p>
+					<input name="question7" type="radio" id="pet1" value="1"/>
+					<label for="pet1">Strongly Disagree</label>
+					<input name="question7" type="radio" id="pet2" value="2"/>
+					<label for="pet2">Disagree</label>
+					<input name="question7" type="radio" id="pet3"  value="3"/>
+					<label for="pet3">Neutral</label>
+					<input name="question7" type="radio" id="pet4" value="4" />
+					<label for="pet4">Agree</label>
+					<input name="question7" type="radio" id="pet5" value="5" />
+					<label for="pet5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>8) Seinfeld is the best TV sitcom ever...</p>
+					<input name="question8" type="radio" id="show1" value="1"/>
+					<label for="show1">Strongly Disagree</label>
+					<input name="question8" type="radio" id="show2" value="2"/>
+					<label for="show2">Disagree</label>
+					<input name="question8" type="radio" id="show3"  value="3"/>
+					<label for="show3">Neutral</label>
+					<input name="question8" type="radio" id="show4" value="4" />
+					<label for="show4">Agree</label>
+					<input name="question8" type="radio" id="show5" value="5" />
+					<label for="show5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>9) Chevy is the better vehicle over Ford...</p>
+					<input name="question9" type="radio" id="car1" value="1"/>
+					<label for="car1">Strongly Disagree</label>
+					<input name="question9" type="radio" id="car2" value="2"/>
+					<label for="car2">Disagree</label>
+					<input name="question9" type="radio" id="car3"  value="3"/>
+					<label for="car3">Neutral</label>
+					<input name="question9" type="radio" id="car4" value="4" />
+					<label for="car4">Agree</label>
+					<input name="question9" type="radio" id="car5" value="5" />
+					<label for="car5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>10) Going out for brunch is more enjoyable than dinner...</p>
+					<input name="question10" type="radio" id="food1" value="1"/>
+					<label for="food1">Strongly Disagree</label>
+					<input name="question10" type="radio" id="food2" value="2"/>
+					<label for="food2">Disagree</label>
+					<input name="question10" type="radio" id="food3"  value="3"/>
+					<label for="food3">Neutral</label>
+					<input name="question10" type="radio" id="food4" value="4" />
+					<label for="food4">Agree</label>
+					<input name="question10" type="radio" id="food5" value="5" />
+					<label for="food5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+				<button class="waves-effect waves-light btn-large" id="submit" type="button">
+					Match Me!
+				</button>
+				</div>
+
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>Your closest match was...</h4>
+						<span id='modalArea'></span>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+
+
+
+</div>
+
+<!-- JavaScript & jQuery -->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
